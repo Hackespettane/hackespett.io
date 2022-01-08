@@ -5,6 +5,7 @@ draft: false
 layout: post
 author: Hackespett.io
 description: Describes the blog post in a short text
+tags: tech
 ---
 
 
