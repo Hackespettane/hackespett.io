@@ -1,0 +1,20 @@
+.header {
+
+    .row {
+        padding:unset!important;
+    }
+
+    padding-top: $sm-spacing;
+    padding-bottom: $sm-spacing;
+
+    &__title {
+
+        label {
+            font-size:2rem!important;
+            font-weight: 700;
+        }
+        
+    }
+
+    border-bottom: 1px solid gray;
+}
