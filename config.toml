@@ -1,3 +1,6 @@
 baseURL = 'http://hackespett.io/'
 languageCode = 'en-us'
 title = 'Hackespettane'
+
+[taxonomies]
+  tag = 'tags'
