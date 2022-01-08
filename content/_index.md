@@ -1,6 +1,6 @@
 ---
 title: Hackespett.io
-layout: template
+layout: landing-page
 description: Test description 
 button: NEW TEST BTTON
 ---
