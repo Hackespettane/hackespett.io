@@ -1,11 +1,13 @@
 {{ define "main" }}
 
-<div>
-  <h1>{{ .Title }}</h1>
-  <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
-   {{ range .Pages }}
-       <p>{{ partial "blog-card" . }}</p>
-   {{ end }}
-</div>
+  <div class="blog">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+        <div class="row">
+          {{ range .Pages }}
+           {{ partial "blog-card" . }}
+          {{ end }}
+        </div>
+    </div>
 
 {{end}}
