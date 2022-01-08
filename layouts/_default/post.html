@@ -17,6 +17,12 @@
         <p>{{ $.Page.Content }}</p>
       </div>
       <div class="col-lg-4">
+        <h3>Category</h3>
+        <ul>
+          {{ range (.GetTerms "categories") }}
+              <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
         <h3>Tags</h3>
         <ul>
           {{ range (.GetTerms "tags") }}
