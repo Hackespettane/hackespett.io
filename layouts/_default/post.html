@@ -1,6 +1,10 @@
 {{ define "main" }}
 
 <h1>{{ $.Page.Title}}</h1>
+<p><i>{{ .Params.Date}}</i></p>
+<p><b>Forfatter: {{ .Params.author}}</b></p>
+<p><i>{{ .Params.description }}</i></p>
+
 
 {{ $.Page.Content }}
 
