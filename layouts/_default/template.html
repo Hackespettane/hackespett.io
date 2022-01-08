@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h1>{{ $.Page.Title}}</h1>
+
+{{range .Site.RegularPages}}
+
+    {{ partial "card.html" . }}
+
+{{end}}
+
+{{end}}
