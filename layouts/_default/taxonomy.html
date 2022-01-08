@@ -1,22 +1,11 @@
 {{ define "main" }}
 
-<section>
-  <ul>
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
-        <ul>
-          {{ range $key, $value := $taxonomy }}
-          <li> {{ $key }} </li>
-                <ul>
-                {{ range $value.Pages }}
-                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                {{ end }}
-                </ul>
-          {{ end }}
-        </ul>
-      </li>
-    {{ end }}
-  </ul>
-</section>
+<div>
+  <h1>{{ .Title }}</h1>
+  <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
+   {{ range .Pages }}
+       <p>{{ partial "blog-card" . }}</p>
+   {{ end }}
+</div>
 
 {{end}}

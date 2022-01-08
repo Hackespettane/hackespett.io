@@ -4,3 +4,4 @@ title = 'Hackespettane'
 
 [taxonomies]
   tag = 'tags'
+  category = 'categories'
