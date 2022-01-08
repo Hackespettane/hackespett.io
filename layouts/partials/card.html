@@ -1,3 +1,8 @@
-<div style="border:1px solid black; padding:20px; width:100px;float:left; height:100px;">
-    {{ $.Page.Title }}
+<div class="col-lg-3">
+    <div style="border: 1px solid black;">
+        <div class="p-5">
+            <h3>{{ $.Page.Title }}</h3>
+            <p><i>{{ .Params.description}}</i></p>
+        </div>
+    </div>
 </div>
