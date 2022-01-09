@@ -1,0 +1,16 @@
+.page__blog-post {
+
+    pre {
+        background-color: $secondary-bg-color;
+        padding: $sm-spacing;
+    }
+
+    .page__content {
+
+        h1 { font-size: $lg-header-font!important;}
+        h2 { font-size: $md-header-font!important;}
+        h3 { font-size: $sm-header-font!important;}
+        h4 { font-size: $xs-header-font!important;}
+    }
+
+}

@@ -1,12 +1,9 @@
-{{ define "main" }}
 <div class="blog">
     <div class="container">
         <div class="row">
-            {{range where .Site.RegularPages.ByDate "Section" "posts" }}
+            {{range where .Site.RegularPages "Section" "posts" }}
                 {{ partial "blog-card.html" . }}
             {{end}}
         </div>
     </div>
 </div>
-
-{{end}}

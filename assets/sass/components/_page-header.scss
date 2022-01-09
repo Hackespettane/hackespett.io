@@ -1,0 +1,9 @@
+.page-header {
+    background-color: $secondary-bg-color;
+    padding-top: $md-spacing;
+    padding-bottom: $sm-spacing;
+
+    p {
+        margin-bottom: unset;
+    }
+}

@@ -1,7 +1,6 @@
 ---
 title: Hackespett.io
-layout: landing-page
+layout: frontpage
 description: Test description 
-button: NEW TEST BTTON
 ---
 

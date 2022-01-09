@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Hackespettane'
+title = 'Hackespett.io'
 
 [taxonomies]
   tag = 'tags'

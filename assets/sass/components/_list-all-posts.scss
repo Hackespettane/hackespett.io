@@ -1,0 +1,35 @@
+.blog {
+    .col-lg-6 {
+
+        padding: 12px;
+
+        a {
+            color: white !important;
+            font-size: 1.2rem;
+            text-decoration: none !important;
+
+            &:hover {
+                .card {
+                    background-color: $secondary-hover-bg-color;
+                }
+            }
+        }
+    }
+
+    .card {
+        background-color: $secondary-bg-color;
+        border-radius: 15px;
+        color: white;
+        padding: $sm-spacing;
+
+        &-title {
+            margin-top: 0;
+            margin-bottom: $sm-spacing;
+            font-size:1.5rem;
+        }
+
+        &-text {
+            font-size:1.1rem;
+        }
+    }
+}

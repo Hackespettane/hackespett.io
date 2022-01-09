@@ -10,11 +10,13 @@
     &__title {
 
         label {
-            font-size:2rem!important;
+            font-size:$md-header-font!important;
             font-weight: 700;
+
+            &:hover {
+                cursor:pointer;
+            }
         }
         
     }
-
-    border-bottom: 1px solid gray;
 }

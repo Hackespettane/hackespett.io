@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="page__blog-post">
+
+<div class="component">
+  {{ partial "components/page-header.html" . }}
+</div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="page__content">
+          <p>{{ $.Page.Content }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3>Category</h3>
+        <ul>
+          {{ range (.GetTerms "categories") }}
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+        <h3>Tags</h3>
+        <ul>
+          {{ range (.GetTerms "tags") }}
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{end}}
